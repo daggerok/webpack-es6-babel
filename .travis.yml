@@ -1,0 +1,10 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+node_js: 5
+script:
+  - npm start
+  - NODE_ENV="production" npm start
+  - npm run test:single
